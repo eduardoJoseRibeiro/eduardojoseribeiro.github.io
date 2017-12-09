@@ -1,43 +1,138 @@
-$cinza : #616161;
-$azul  : #1e88e5;
-
-#logo{
-	margin-left: 4rem; 
-	color : $cinza;
+$cinza: #616161;
+$azul: #1e88e5;
+#logo {
+	margin-left: 4rem;
+	color: $cinza;
 }
-.opt-nav{
-	color : $cinza;
-	&:hover{
-		color : $azul;
+
+.opt-nav {
+	color: $cinza;
+	&:hover {
+		color: $azul;
 		background-color: white;
 	}
 }
-.active{
+
+.active {
 	background-color: $azul!important;
-	& a{
+	& a {
 		color: white;
 	}
-	& a:hover{
+	& a:hover {
 		color: white;
 		background-color: darken($azul, 10%);
 	}
 }
-#logo-img{
+
+#logo-img {
 	width: 40px;
 	height: 40px;
 	margin-top: .8rem;
 	margin-left: 1rem;
 }
-#logo-img-mob{
+
+#logo-img-mob {
 	width: 40px;
 	height: 40px;
 	margin-top: .6rem;
 	margin-left: .3rem;
-	
 }
 
-@media (max-width : 800px){
+@media (max-width: 800px) {
 	#logo {
 		margin-left: 0;
 	}
+}
+
+#jumbo {
+	transition: all 0.7s ease-in-out;
+}
+
+////////////// Seção do Parallax
+.jumbotron {
+	background-image: url('../img/back05.jpg');
+	background-repeat: no-repeat;
+	background-color: rgba(0, 0, 0, .8);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: bottom left;
+	padding-top: 80px;
+	min-height: 600px;
+	height: 100%;
+	width: 100%;
+	//box-shadow: inset -14px -14px 200px 21px;
+}
+
+.descJumbotron {
+	color: white;
+	font-weight: 300;
+	margin-top: 30px;
+}
+
+#btnContratar:hover {
+	background-color: rgba(100%, 100%, 100%, 1);
+	color: $azul;
+	border: 0 solid black;
+	font-size: 1.6rem;
+	padding: 15px;
+	width: 110%;
+	margin-left: -5%;
+}
+
+#btnContratar:hover {
+	margin-bottom: -5px;
+}
+
+#btnContratar:focus,
+#btnTrabalhar:focus {
+	background-color: rgba(100%, 100%, 100%, 0.6);
+	color: black;
+}
+
+.saibaHome {
+	color: white;
+	margin-top: 100px;
+}
+
+.setaAnimada {
+	color: white;
+	font-size: 2.5rem;
+	animation-duration: .6s;
+	animation-name: pula;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes pula {
+	from {
+		margin-top: 10px;
+		margin-bottom: 40px;
+	}
+	to {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+}
+
+.btnCadastrar:focus,
+.btnCadastrar:hover,
+.btnCadastrar:visited {
+	background-color: white!important;
+}
+
+.btnCadastrar {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.btnHome{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $azul;
+  color: white;
+  border: 0;
+  box-shadow: 5px 5px 30px black;
+  font-size: 1.4rem;
+  margin-top: 60px;
 }

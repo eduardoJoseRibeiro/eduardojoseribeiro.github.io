@@ -40,12 +40,71 @@
 		</div>
 	</nav>
 
+	<section class="jumbotron" id="jumbo">
+		<div class="container">
+			<div class="row" id="primeiraParte">
+				<div class="col s12 principal" id="principal">
+					<h4 class="center descJumbotron">
+						Transformando seus sonhos em <b style="color: white ">Realidade</b>
+					</h4>
+					<div class="col offset-m3 m6 s12">
+						<button class="waves-effect waves-light btnHome  modal-trigger" id="btnContratar" data-target="contratar">ME CONHEÇA</button>
+					</div>
+					<!-- Modal Structure 
+                         Cadastro Cliente!
+                    -->
+					<div id="contratar" class="modal">
+						<div class="modal-content">
+							<h4 class="center">Crie sua conta</h4>
+							<form action="../src/cadastro.php" method="post" class="col s12 m6 offset-m3">
+								<div class="input-field">
+									<input type="text" id="nomeCont" name="nome" class="validate">
+									<label for="nomeCont">Nome</label>
+								</div>
+								<div class="input-field">
+									<input type="email" id="emailCont" name="email" class="validate">
+									<label for="emailCont">Email</label>
+								</div>
+								<div class="input-field">
+									<input type="password" id="senhaCont" class="validate" name="senha">
+									<label for="senhaCont">Senha</label>
+								</div>
+								<div class="container">
+									<div class="row">
+										<div class="col s12 m8 offset-m2">
+											<button type="submit" class="modal-action modal-close waves-effect waves-green btn-flat center btnCadastrar">Cadastrar</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="center row">
+						<h5 class="saibaHome col s12 center">saiba mais</h5>
+						<a href="#meus-projetos" class="scrollSuave"><i class="material-icons setaAnimada col s12 center">arrow_downward</i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="meus-projetos">
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</section>
+	
 	<!-- JQuery -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script>
 		$(".button-collapse").sideNav();
+		var $doc = $('html, body');
+        $('.scrollSuave').click(function() {
+            $doc.animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 750);
+            return false;
+        });
 
 	</script>
 	<!--Start of Tawk.to Script-->
