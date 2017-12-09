@@ -1,0 +1,43 @@
+$cinza : #616161;
+$azul  : #1e88e5;
+
+#logo{
+	margin-left: 4rem; 
+	color : $cinza;
+}
+.opt-nav{
+	color : $cinza;
+	&:hover{
+		color : $azul;
+		background-color: white;
+	}
+}
+.active{
+	background-color: $azul!important;
+	& a{
+		color: white;
+	}
+	& a:hover{
+		color: white;
+		background-color: darken($azul, 10%);
+	}
+}
+#logo-img{
+	width: 40px;
+	height: 40px;
+	margin-top: .8rem;
+	margin-left: 1rem;
+}
+#logo-img-mob{
+	width: 40px;
+	height: 40px;
+	margin-top: .6rem;
+	margin-left: .3rem;
+	
+}
+
+@media (max-width : 800px){
+	#logo {
+		margin-left: 0;
+	}
+}
