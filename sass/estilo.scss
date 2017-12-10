@@ -48,9 +48,20 @@ $azul: #1e88e5;
 	transition: all 0.7s ease-in-out;
 }
 
+#jambo {
+	transition: all 0.7s ease-in-out;
+}
+
 ////////////// Seção do Parallax
-.jumbotron {
+.backPrincipal {
 	background-image: url('../img/back05.jpg');
+}
+
+.backFinal {
+	background-image: url('../img/back02.jpg');
+}
+
+.jumbotron {
 	background-repeat: no-repeat;
 	background-color: rgba(0, 0, 0, .8);
 	background-attachment: fixed;
@@ -125,19 +136,19 @@ $azul: #1e88e5;
 	margin-bottom: 10px;
 }
 
-.btnHome{
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: $azul;
-  color: white;
-  border: 0;
-  box-shadow: 5px 5px 30px black;
-  font-size: 1.4rem;
-  margin-top: 60px;
+.btnHome {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: $azul;
+	color: white;
+	border: 0;
+	box-shadow: 5px 5px 30px black;
+	font-size: 1.4rem;
+	margin-top: 60px;
 }
 
-.tituloProjetos{
+.tituloProjetos {
 	font-weight: 300;
 	color: $azul;
 	padding-bottom: 1rem;
@@ -149,26 +160,26 @@ $azul: #1e88e5;
 	padding-bottom: 3rem;
 }
 
-.sobre-mim-text a{
+.sobre-mim-text a {
 	color: white;
 	font-weight: 600;
 }
 
-#especialidades{
+#especialidades {
 	background-color: lighten($azul, 10%);
 	padding: 1rem;
 	width: 100%;
 	margin-top: -1.4rem;
 }
 
-#especialidades li{
+#especialidades li {
 	background-color: white;
 }
 
-.tituloEspecialidades{
+.tituloEspecialidades {
 	font-weight: 300;
 }
-//.navHome{
-//	position: fixed;
-//	z-index: 9999;
-//}
+.icones{
+	color: white;
+	padding: .4rem;
+}
