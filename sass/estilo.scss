@@ -13,7 +13,7 @@ $azul: #1e88e5;
 	}
 }
 
-.active {
+.activeHome {
 	background-color: $azul!important;
 	& a {
 		color: white;
@@ -135,4 +135,36 @@ $azul: #1e88e5;
   box-shadow: 5px 5px 30px black;
   font-size: 1.4rem;
   margin-top: 60px;
+}
+
+.tituloProjetos{
+	font-weight: 300;
+	color: $azul;
+	padding-bottom: 1rem;
+}
+
+#sobre-mim {
+	background-color: $azul;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+}
+
+.sobre-mim-text a{
+	color: white;
+	font-weight: 600;
+}
+
+#especialidades{
+	background-color: lighten($azul, 10%);
+	padding: 1rem;
+	width: 100%;
+	margin-top: -1.4rem;
+}
+
+#especialidades li{
+	background-color: white;
+}
+
+.tituloEspecialidades{
+	font-weight: 300;
 }
