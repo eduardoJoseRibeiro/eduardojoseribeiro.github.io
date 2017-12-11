@@ -183,3 +183,9 @@ $azul: #1e88e5;
 	color: white;
 	padding: .4rem;
 }
+.page-footer{
+	background-color: lighten($azul, 5%);
+}
+.page-footer li {
+	padding: .4rem;
+}
