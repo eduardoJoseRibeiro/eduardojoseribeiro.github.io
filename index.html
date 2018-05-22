@@ -89,8 +89,12 @@
 					<div class="card">
 						<div class="card-image">
 							<img src="img/Concar.jpg">
-							<span class="card-title">Concar</span>
-							<a class="btn-floating halfway-fab waves-effect waves-light blue btn-large"><i class="material-icons">add</i></a>
+							<a href="#modal1" class="modal-trigger">
+								<span class="card-title">Concar</span>
+							</a>
+							<a class="btn-floating halfway-fab waves-effect waves-light blue btn-large modal-trigger" href="#modal1">
+								<i class="material-icons">add</i>
+							</a>
 						</div>
 						<div class="card-content text-darken-1 grey-text">
 							<p>Uma empresa de serviços estéticos para veículos de forma delivery, ou seja, nós vamos até você!<span class="red-text">[Projeto Cancelado]</span></p>
@@ -101,8 +105,12 @@
 					<div class="card">
 						<div class="card-image">
 							<img src="img/ZeroFilas.jpg">
-							<span class="card-title">ZeroFilas</span>
-							<a class="btn-floating halfway-fab waves-effect waves-light blue btn-large"><i class="material-icons">add</i></a>
+							<a class="modal-trigger" href="#modal1">
+								<span class="card-title">ZeroFilas</span>
+							</a>
+							<a class="btn-floating halfway-fab waves-effect waves-light blue btn-large modal-trigger" href="#modal1">
+								<i class="material-icons">add</i>
+							</a>
 						</div>
 						<div class="card-content text-darken-1 grey-text">
 							<p>Marketplace para mercados, onde as empresas se registram e os clientes compram em dinheiro ou cartão, passando para pegar ou recebem em casa. 
@@ -112,9 +120,10 @@
 					</div>
 				</div>
 				<br>
-				<h3 class="center tituloProjetos" style="font-size: 2.5rem;">
+
+				<h2 class="center tituloProjetos">
 					Landing Pages 
-				</h3>
+				</h2>
 				<p class="flow-text center text-darken-1 grey-text">
 					São páginas estáticas com muita das vezes tendo o objetivo de validação de ideias ou obtenção de futuros clientes.
 				</p>
@@ -154,13 +163,14 @@
 						</div>
 					</div>
 				</div>
-				<hr>
+				<h2 class="center tituloProjetos">
+					Locais em que trabalhei 
+				</h2>
 				<p class="flow-text center text-darken-1 grey-text">
-					E por último o que não é de fato um projeto meu, porém é onde estou trabalhando hoje e aprendendo muito.
+					São páginas estáticas com muita das vezes tendo o objetivo de validação de ideias ou obtenção de futuros clientes.
 				</p>
-				<hr>
 				<br>
-				<div class="col s12 m12">
+				<div class="col s12 m6">
 					<div class="card">
 						<div class="card-image">
 							<img src="img/WCore.jpg">
@@ -272,11 +282,13 @@
 	<!--Modal WCORE -->
 	<div id="modal1" class="modal">
 		<div class="modal-content">
-			<h4>Modal Header</h4>
-			<p>A bunch of text</p>
+			<h4>Indisponível</h4>
+			<p>
+				O projeto que você tentou acessar está indisponível. Ele pode estar em produção, ter sido cancelado ou pivotado (reformulado).
+			</p>
 		</div>
 		<div class="modal-footer">
-			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
 		</div>
 	</div>
 	<footer class="page-footer">
@@ -299,7 +311,7 @@
 		</div>
 		<div class="footer-copyright">
 			<div class="container">
-				© 2017 - Eduardo Ribeiro
+				© 2018 - Eduardo Ribeiro
 				<a class="grey-text text-lighten-4 right" href="https://eduardojoseribeiro.github.io/">Meu Site</a>
 			</div>
 		</div>
@@ -317,6 +329,9 @@
 				scrollTop: $($.attr(this, 'href')).offset().top
 			}, 750);
 			return false;
+		});
+		$(document).ready(function(){
+		    $('.modal').modal();
 		});
 
 	</script>
@@ -347,7 +362,6 @@
 		gtag('js', new Date());
 
 		gtag('config', 'UA-91627254-2');
-
 	</script>
 	<!--	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> 	-->
 </body>
